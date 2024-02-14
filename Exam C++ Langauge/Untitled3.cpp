@@ -17,7 +17,8 @@ class Vehicle {
 	        this->model = model;
 	    }
 	
-	    string getModel() const {
+	    string getModel()  
+		{
 	        return model;
 	    }
 	
@@ -25,7 +26,8 @@ class Vehicle {
 	        this->speed = speed;
 	    }
 	
-	    double getSpeed() const {
+	    double getSpeed()  
+		{
 	        return speed;
 	    }
 	
@@ -33,9 +35,7 @@ class Vehicle {
 
 class Car : public Vehicle {
 	public:
-	    Car( string model, double speed) : Vehicle(model, speed) 
-		{
-		}
+	    Car( string model, double speed) : Vehicle(model, speed) {}
 	
 	    double calculateTime(double distance) {
 	        return distance / speed;
